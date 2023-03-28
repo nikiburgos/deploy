@@ -6,7 +6,7 @@ import CreateVideogame from './components/CREATEVIDEOGAME/CreateVideogame';
 import Detail from './components/DETAIL/Detail';
 import About from './components/ABOUT/About';
 import axios from 'axios';
-axios.defaults.baseURL = 'deploy-production-3713.up.railway.app'
+axios.defaults.baseURL = 'https://deploy-production-3713.up.railway.app/'
 
 // import { useLocation } from 'react-router-dom';
 
