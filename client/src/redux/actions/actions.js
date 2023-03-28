@@ -7,7 +7,7 @@ import { GET_VIDEOGAMES, FILTERED_BY_GENRES, FILTERED_BY_ORIGIN, ORDER_BY_NAME, 
 
 export const getVideogames = () => { //ACTION QUE TRAE TODOS LOS VIDEOGAMES
     return async function (dispatch){ //lo hago con async await pero se puede hacer con promesas tmb, hacer uno para practicar ! 
-        let json = await axios.get("http://localhost:3001/videogames", {  
+        let json = await axios.get("/videogames", {  
         //esta es la ruta que hice en el back que me trae TODOS los videojuegos.
         //acá es donde se hace la 'comunicación entre el front y el back :)
         })
@@ -58,7 +58,7 @@ export const orderByName = (payload) => { //ACTION QUE ORDENA VIDEOGAMES POR NOM
 export const getVideogameByName = (name) => { //ACTION QUE TRAE EL VIDEOGAME BUSCADO POR NOMBRE
     return async function (dispatch){
         try {
-            let json = await axios.get(`http://localhost:3001/videogames?name=${name}`)
+            let json = await axios.get(`/videogames?name=${name}`)
             return dispatch({
                 type: GET_VIDEOGAME_BY_NAME,
                 payload: json.data
@@ -71,7 +71,7 @@ export const getVideogameByName = (name) => { //ACTION QUE TRAE EL VIDEOGAME BUS
 
 export const getGenres = () => {  //ACTION QUE TRAE EL ARRAY DE GENEROS
     return async function (dispatch){
-        let info = await axios.get(`http://localhost:3001/genres`, {
+        let info = await axios.get(`/genres`, {
         })
         return dispatch({
             type: GET_GENRES,
@@ -82,7 +82,7 @@ export const getGenres = () => {  //ACTION QUE TRAE EL ARRAY DE GENEROS
 
 export const postVideogame = (payload) => { //ACTION QUE CREA UN VIDEOGAME :) 
     return async function (dispatch){
-        const response = await axios.post(`http://localhost:3001/videogames`, payload);
+        const response = await axios.post(`/videogames`, payload);
         return response;
     }
 }
@@ -90,7 +90,7 @@ export const postVideogame = (payload) => { //ACTION QUE CREA UN VIDEOGAME :)
 export const getDetail = (payload) => { //ACTION QUE TRAE EL DETAIL POR ID
     return async function (dispatch){
         try {
-            let json = await axios.get(`http://localhost:3001/videogames/${payload}`)
+            let json = await axios.get(`/videogames/${payload}`)
             return dispatch({
                type: GET_DETAIL,
                payload: json.data

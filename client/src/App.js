@@ -5,6 +5,8 @@ import Home from './components/HOME/Home';
 import CreateVideogame from './components/CREATEVIDEOGAME/CreateVideogame';
 import Detail from './components/DETAIL/Detail';
 import About from './components/ABOUT/About';
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3001/'
 
 // import { useLocation } from 'react-router-dom';
 
