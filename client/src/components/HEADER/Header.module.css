@@ -1,0 +1,52 @@
+.encabezado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.5rem; /* ajusta el alto según tus necesidades */
+    width: 100%;   
+    z-index: 999; /* asegura que esté sobre los demás elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    display:block;  
+    justify-content: center;  
+    padding:  1rem;  
+    margin-bottom: 25px;
+    background-color: rgb(255, 159, 28);
+      /* border-radius: 99999999rem; */
+  
+      /* /* box-shadow: 1px 1px 4px black;
+      background-color: rgba(86, 86, 60, 0.4) ; */ 
+  
+    }
+
+    .button{
+    
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1;
+        border-radius: 500px;
+        transition-property: background-color,border-color,color,box-shadow,filter;
+        transition-duration: .3s;
+        border: 1px solid transparent;
+        letter-spacing: 4px;
+        
+        width: 25rem;
+        text-transform: uppercase;
+        white-space: normal;
+        font-weight: 700;
+        text-align: center;
+        padding: 17px 48px;
+        color: #fff;
+        background-color: rgb(18, 17, 19);
+        height: 48px;
+        margin: .2rem;
+      }
+        .button:hover{
+            transform: scale(1.04);
+            background-color: rgb(255, 159, 28);
+        }

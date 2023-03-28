@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 159, 28);
+    position: abosolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    flex: 1;
+  }
+
+  
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.img2 {
+    width: 40px; /* para que las imágenes se vean pequeñas */
+    height: auto; /* para mantener la relación de aspecto de la imagen */
+    margin-right: 10px; /* para agregar un pequeño espacio entre cada imagen */
+}
+
+  
+  .img2:hover {
+    /* transform: scale(1.5); */
+    color: #fff;
+    cursor: pointer
+
+  }
+
+  .title{
+    color: rgba(18, 17, 19, 0.673);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing:2rem ;
+    font-size: 1.6rem;
+  }
+
+  .text{
+    color: rgba(18, 17, 19, 0.49);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin: 1rem ;  
+    letter-spacing: .3rem;
+    text-transform: lowercase; 
+}
